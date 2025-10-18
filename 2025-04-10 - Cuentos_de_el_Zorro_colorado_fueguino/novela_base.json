@@ -1,0 +1,40 @@
+{
+    "title": "Cuentos de el Zorro Colorado Fueguino",
+    "description": "Una novela lírica que entrelaza las vidas de un zorro culpeo y una joven selk'nam en la Tierra del Fuego, explorando el vínculo, la resiliencia y la pérdida cultural frente al colonialismo.",
+    "characters": [
+        {
+            "name": "Kaiken",
+            "description": "Un zorro culpeo astuto y solitario, símbolo de la resistencia y adaptabilidad de la vida silvestre fueguina."
+        },
+        {
+            "name": "Alma",
+            "description": "Una joven selk'nam con una profunda conexión con la naturaleza, que se enfrenta a decisiones desgarradoras sobre su identidad y el futuro de su cultura."
+        },
+        {
+            "name": "Narra",
+            "description": "La abuela de Alma, portadora de la historia y las tradiciones selk'nam, representando la sabiduría ancestral y la resistencia cultural."
+        }
+    ],
+    "chapters": [
+        {
+            "title": "El Viento de la Estepa",
+            "summary": "Kaiken, un joven zorro, aprende a cazar en la estepa azotada por el viento, mientras Alma, una niña selk'nam, escucha las historias de su abuela Narra sobre los espíritus de la tierra. Se establece la conexión entre ambos y su profundo arraigo en el paisaje."
+        },
+        {
+            "title": "La Huella del Hombre Blanco",
+            "summary": "Llegan los primeros colonos, trayendo consigo ovejas y armas de fuego. Kaiken observa con desconfianza cómo su territorio de caza se reduce, y Alma presencia el miedo en los ojos de su padre cuando ve las tierras ancestrales demarcadas. Narra advierte sobre los cambios venideros: 'El viento trae nuevas voces, voces que no entienden el susurro de la tierra.'"
+        },
+        {
+            "title": "El Dolor de la Pérdida",
+            "summary": "La caza indiscriminada diezma la población de guanacos, afectando la alimentación de Kaiken. La enfermedad llega al campamento selk'nam, llevándose a algunos miembros de la comunidad. Alma encuentra consuelo en la compañía de Kaiken, quien parece comprender su dolor. '¿Por qué lloras, Alma?', pregunta Kaiken, aunque en un lenguaje sin palabras. Ella responde: 'Porque el viento se lleva lo que amamos.'"
+        },
+        {
+            "title": "La Semilla de la Resistencia",
+            "summary": "Alma, inspirada por las historias de resistencia de su abuela, comienza a aprender las habilidades de sus ancestros: rastreo, medicina herbal, y la antigua conexión con los espíritus de la naturaleza. Kaiken, cada vez más astuto, evade las trampas de los colonos y aprende a sobrevivir en un mundo hostil. Ambos desarrollan una forma de comunicarse a través de los sentidos y la intuición. 'Debemos recordar quienes somos, Alma,' dice Narra. 'Somos hijos de la tierra, y la tierra nos protegerá.'"
+        },
+        {
+            "title": "El Fuego de la Esperanza",
+            "summary": "Alma se une a un pequeño grupo de selk'nam que planea resistir a los colonos, utilizando su conocimiento del terreno y sus habilidades de supervivencia. Kaiken se convierte en su aliado, guiándolos a través de rutas secretas y alertándolos sobre los peligros. En un acto de desafío, prenden fuego a un campamento de colonos, enviando un mensaje claro: la tierra no se rendirá sin luchar. 'El fuego purifica y renueva, Kaiken,' dice Alma. 'Es la promesa de un nuevo comienzo, aunque las cenizas aún estén calientes.'"
+        }
+    ]
+}
