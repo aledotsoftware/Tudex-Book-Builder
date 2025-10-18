@@ -18,8 +18,12 @@ class NovelWeaverStudio(toga.App):
         self.main_box = toga.Box(style=Pack(direction=COLUMN))
 
         # Left Column (Navigation)
+        self.structure_tree = toga.Tree(
+            headings=["Estructura"],
+            style=Pack(flex=1)
+        )
         self.left_container = toga.Box(style=Pack(direction=COLUMN, padding=5))
-        self.left_container.add(toga.Label("Navegación y Estructura"))
+        self.left_container.add(self.structure_tree)
 
         # Right Column (Contextual Tools)
         self.right_container = toga.Box(style=Pack(direction=COLUMN, padding=5))
@@ -52,9 +56,22 @@ class NovelWeaverStudio(toga.App):
         if self.current_novel:
             self.main_window.title = f"{self.formal_name} - {self.current_novel.title}"
             self.editor_input.value = self.current_novel.description
+
+            # Populate the structure tree
+            self.structure_tree.data.clear()
+            root = self.structure_tree.data.append(self.current_novel.title)
+
+            chapters_node = root.append("Capítulos")
+            for chapter in self.current_novel.chapters:
+                chapters_node.append(chapter.title)
+
+            characters_node = root.append("Personajes")
+            for character in self.current_novel.characters:
+                characters_node.append(character.name)
         else:
             self.main_window.title = self.formal_name
             self.editor_input.value = ""
+            self.structure_tree.data.clear()
 
     async def new_novel(self, widget):
         """Handles the 'Nuevo Proyecto' command."""

@@ -1,0 +1,3 @@
+toga
+ruamel.yaml
+google-generativeai
