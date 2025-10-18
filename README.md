@@ -5,99 +5,111 @@
 </p>
 
 <p align="center">
-  <strong>An AI-powered tool to generate complete, illustrated novels from a single title.</strong>
+  <strong>Una herramienta impulsada por IA para generar novelas completas e ilustradas a partir de un simple título.</strong>
   <br>
-  For writers, artists, and anyone with a story to tell.
+  Para escritores, artistas y cualquiera con una historia que contar.
 </p>
 
 ---
 
-## **🌟 Overview**
+## **🌟 Descripción General**
 
-Novel Weaver AI leverages the power of the **Google Gemini** model to bring your story ideas to life. Just provide a title, and the script will generate a rich, structured novel complete with:
+Novel Weaver AI utiliza el poder del modelo **Google Gemini** para dar vida a tus ideas. Simplemente proporciona un título, y el script generará una novela rica y estructurada con:
 
--   **🤖 A compelling plot and description.**
--   **👨‍👩‍👧‍👦 A cast of unique characters.**
--   **📚 A full narrative, broken down into chapters and parts.**
--   **🎨 Beautiful storyboard images in a consistent artistic style.**
+-   **🤖 Una trama y descripción convincentes.**
+-   **👨‍👩‍👧‍👦 Un elenco de personajes únicos.**
+-   **📚 Una narrativa completa, dividida en capítulos y partes.**
+-   **🎨 Hermosas imágenes de storyboard con un estilo artístico consistente.**
 
-Everything is automatically organized into a clean folder structure, ready for you to read, edit, or build upon.
+Todo se organiza automáticamente en una estructura de carpetas limpia, lista para que puedas leer, editar o expandir.
 
 ---
 
-## **🚀 Getting Started**
+## **🚀 Cómo Empezar**
 
-Follow these steps to generate your first novel.
+Sigue estos pasos para generar tu primera novela.
 
-### **1. Prerequisites**
+### **1. Prerrequisitos**
 
-Before you begin, make sure you have Python installed on your system. This project requires **Python 3.7+**.
+Antes de comenzar, asegúrate de tener Python instalado en tu sistema. Este proyecto requiere **Python 3.7+**.
 
--   **Check your Python version:**
-    Open a terminal or command prompt and run:
+-   **Verifica tu versión de Python:**
+    Abre una terminal o símbolo del sistema y ejecuta:
     ```bash
     python --version
-    # If that doesn't work, try:
+    # Si eso no funciona, intenta con:
     python3 --version
     ```
--   **No Python?**
-    If you don't have Python installed, download it from the [official Python website](https://www.python.org/downloads/).
+-   **¿No tienes Python?**
+    Si no tienes Python instalado, descárgalo desde el [sitio web oficial de Python](https.www.python.org/downloads/).
 
-### **2. Set Up Your API Key**
+### **2. Configura tu Clave de API**
 
-This script requires a Google Generative AI API key.
+Este script requiere una clave de API de Google Generative AI.
 
--   **Get your key:**
-    You can obtain one from the [Google AI for Developers](https://ai.google.dev/) website.
--   **Set it as an environment variable:**
-    To keep your key secure, **do not** hardcode it into the script. Instead, set it as an environment variable named `GOOGLE_API_KEY`.
+-   **Obtén tu clave:**
+    Puedes obtener una desde el sitio web de [Google AI for Developers](https://ai.google.dev/).
+-   **Establécela como una variable de entorno:**
+    Para mantener tu clave segura, **no** la escribas directamente en el script. En su lugar, establécela como una variable de entorno llamada `GOOGLE_API_KEY`.
 
     -   **macOS/Linux:**
         ```bash
-        export GOOGLE_API_KEY="YOUR_API_KEY_HERE"
+        export GOOGLE_API_KEY="TU_CLAVE_DE_API_AQUÍ"
         ```
-        *(To make this permanent, add the line to your `.bashrc`, `.zshrc`, or shell configuration file.)*
+        *(Para que esto sea permanente, agrega la línea a tu archivo `.bashrc`, `.zshrc` o de configuración de tu shell.)*
 
-    -   **Windows (Command Prompt):**
+    -   **Windows (Símbolo del sistema):**
         ```bash
-        set GOOGLE_API_KEY="YOUR_API_KEY_HERE"
+        set GOOGLE_API_KEY="TU_CLAVE_DE_API_AQUÍ"
         ```
 
     -   **Windows (PowerShell):**
         ```powershell
-        $Env:GOOGLE_API_KEY="YOUR_API_KEY_HERE"
+        $Env:GOOGLE_API_KEY="TU_CLAVE_DE_API_AQUÍ"
         ```
 
-### **3. Install Dependencies**
+### **3. Instala las Dependencias**
 
-This project relies on the `google-generativeai` library. Install it using pip:
+Este proyecto depende de las bibliotecas `google-generativeai` y `toga`. Instálalas usando pip:
 ```bash
-pip install google-generativeai
-# Or, if you use python3:
-python3 -m pip install google-generativeai
+pip install google-generativeai toga
+# O, si usas python3:
+python3 -m pip install google-generativeai toga
 ```
 
-### **4. Run the Script**
+### **4. Ejecuta el Script**
 
-You're all set! Run the script from your terminal with your desired novel title:
+¡Ya está todo listo! Puedes generar tu novela de dos maneras:
+
+**Opción A: Interfaz Gráfica (Recomendado)**
+
+Ejecuta el siguiente comando para abrir la aplicación de escritorio:
 ```bash
-python main.py "The Enchanted Island of Brench"
+python gui.py
 ```
-> **Tip:** Remember to enclose titles with spaces in quotes.
+Introduce el título de tu novela en el campo de texto y haz clic en "Generar Novela".
 
-The script will create a new folder with the current date and your novel's title, containing all the generated files.
+**Opción B: Línea de Comandos**
+
+Si prefieres usar la terminal, ejecuta el script `main.py` con el título de tu novela:
+```bash
+python main.py "La Isla Encantada de Brench"
+```
+> **Consejo:** Recuerda encerrar los títulos con espacios entre comillas.
+
+Ambas opciones crearán una nueva carpeta con la fecha actual y el título de tu novela, que contendrá todos los archivos generados.
 
 ---
 
-## **📁 Folder Structure**
+## **📁 Estructura de Carpetas**
 
-Here’s what the output looks like:
+Así es como se ve la salida:
 ```
-YYYY-MM-DD - your_novel_title/
+YYYY-MM-DD - tu_titulo_de_novela/
 ├── novela_base.json
 ├── novela_completa.json
 ├── novela_completa.txt
-├── 01-chapter_one/
+├── 01-capitulo_uno/
 │   ├── parte_1.txt
 │   └── imagenes/
 │       ├── imagen_1.png
@@ -107,21 +119,21 @@ YYYY-MM-DD - your_novel_title/
 
 ---
 
-## **🤔 Troubleshooting**
+## **🤔 Solución de Problemas**
 
-Here are solutions to common issues:
+Aquí hay soluciones a problemas comunes:
 
 -   **`Error: python: command not found`**
-    This means the `python` command isn't recognized. Try using `python3` instead. If neither works, you may need to [install Python](https://www.python.org/downloads/) or add it to your system's PATH.
+    Esto significa que el comando `python` no se reconoce. Intenta usar `python3` en su lugar. Si ninguno de los dos funciona, es posible que necesites [instalar Python](https.www.python.org/downloads/) o agregarlo al PATH de tu sistema.
 
 -   **`Error: No GOOGLE_API_KEY found in environment variables.`**
-    The script couldn't find your API key. Make sure you have set the `GOOGLE_API_KEY` environment variable correctly for your operating system (see Step 2).
+    El script no pudo encontrar tu clave de API. Asegúrate de haber configurado correctamente la variable de entorno `GOOGLE_API_KEY` para tu sistema operativo (consulta el Paso 2).
 
 -   **`pip: command not found`**
-    This can happen on some systems. Try running `python -m pip` or `python3 -m pip` instead.
+    Esto puede ocurrir en algunos sistemas. Intenta ejecutar `python -m pip` o `python3 -m pip` en su lugar.
 
 ---
 
-## **✍️ Author**
+## **✍️ Autor**
 
-This script was designed to automate novel creation and inspire creativity. If you have ideas for improvements, feel free to contribute!
+Este script fue diseñado para automatizar la creación de novelas e inspirar la creatividad. Si tienes ideas para mejorarlo, ¡no dudes en contribuir!
