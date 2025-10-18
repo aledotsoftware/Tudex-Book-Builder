@@ -1,3 +1,10 @@
+"""
+This script generates a complete novel, including characters, narrative structure,
+extended chapters, and a visual storyboard, using the Google Gemini 2 model.
+It is ideal for writers, creatives, and developers who want to experiment with
+AI for creating visual stories.
+"""
+
 import os
 import sys
 import json
@@ -7,12 +14,25 @@ import google.generativeai as genai
 from datetime import datetime
 
 def log(msg):
+    """
+    Logs a message to the console with a timestamp.
+
+    Args:
+        msg (str): The message to log.
+    """
     print(f"[{datetime.now().strftime('%H:%M:%S')}] {msg}")
 
 def slugify(text, max_length=50):
     """
-    Convierte un texto en una versión 'slug' adecuada para nombres de archivos o carpetas.
-    Se eliminan caracteres no alfanuméricos y se limita la longitud.
+    Converts a text into a 'slug' version suitable for file or folder names.
+    Non-alphanumeric characters are removed, and the length is limited.
+
+    Args:
+        text (str): The text to convert.
+        max_length (int): The maximum length of the slug.
+
+    Returns:
+        str: The slugified text.
     """
     text = re.sub(r"[^\w\s-]", "", text)
     text = re.sub(r"[-\s]+", "_", text.strip())
@@ -20,9 +40,15 @@ def slugify(text, max_length=50):
 
 def generate_storyboard_images(chapter_text, chapter_folder, model):
     """
-    Divide el contenido del capítulo en párrafos y genera imágenes cada 3 a 5 párrafos.
-    Las imágenes se guardan en la carpeta "imagenes" dentro del directorio del capítulo.
-    Se utiliza un prompt que mantiene el estilo visual (acuarela, lápiz de colores, tonos pasteles y texturas detalladas).
+    Divides the chapter content into paragraphs and generates images every 3 to 5 paragraphs.
+    The images are saved in the "imagenes" folder within the chapter directory.
+    A prompt is used to maintain a consistent visual style (watercolor, colored pencil,
+    pastel tones, and detailed textures).
+
+    Args:
+        chapter_text (str): The text content of the chapter.
+        chapter_folder (str): The path to the folder where the chapter is stored.
+        model: The generative AI model to use for image generation.
     """
     # Dividir el contenido en párrafos
     paragraphs = [p.strip() for p in chapter_text.split("\n\n") if p.strip()]
@@ -60,8 +86,19 @@ def generate_storyboard_images(chapter_text, chapter_folder, model):
             combined_prompt = ""
 
 def generate_novel(title):
+    """
+    Generates a complete novel with a title, description, characters, and chapters.
+    The novel is generated in JSON format and then expanded into a full text version
+    with storyboard images.
+
+    Args:
+        title (str): The title of the novel.
+    """
     # Configurar la API de Generative AI
-    genai.configure(api_key="AIzaSyAYjVMMfmrl21wInHKaKCb9AvZIsbolKiA")
+    api_key = os.environ.get("GOOGLE_API_KEY")
+    if not api_key:
+        raise ValueError("No GOOGLE_API_KEY found in environment variables.")
+    genai.configure(api_key=api_key)
     model = genai.GenerativeModel("gemini-2.0-flash")
 
     # Generar descripción general
@@ -72,7 +109,7 @@ def generate_novel(title):
 
     # Generar la estructura base de la novela en formato JSON
     log("Generando estructura base de la novela...")
-    novel_prompt = f"""
+    novel_prompt = f\"\"\"
     Basado en la siguiente descripción:
 
     {description}
@@ -94,7 +131,7 @@ def generate_novel(title):
     }}
 
     Incluye al menos 3 capítulos con una progresión narrativa clara.
-    """
+    \"\"\"
     response = model.generate_content(
         novel_prompt,
         generation_config=genai.types.GenerationConfig(response_mime_type="application/json")
@@ -126,7 +163,7 @@ def generate_novel(title):
         context_snippet = previous_chapter_text[-1500:] if previous_chapter_text else ""
         
         # Generar la expansión inicial del capítulo con el contexto anterior (si existe)
-        expand_prompt = f"""
+        expand_prompt = f\"\"\"
         CONTEXTO DEL CAPÍTULO ANTERIOR:
         \"\"\"
         {context_snippet}
@@ -146,7 +183,7 @@ def generate_novel(title):
         - Evita repetir estructuras gramaticales similares.
         - Además, concluye el capítulo con un gancho que conecte de forma natural con el siguiente.
         Entrega solo el texto completo del capítulo, sin introducciones ni anotaciones.
-        """
+        \"\"\"
         initial_expansion_response = model.generate_content(expand_prompt)
         initial_expansion = initial_expansion_response.text.strip()
 
@@ -157,7 +194,7 @@ def generate_novel(title):
 
         # Generar cada parte adicional basada en el contenido anterior
         for part_number in range(1, num_additional_parts + 1):
-            part_prompt = f"""
+            part_prompt = f\"\"\"
             Continúa el siguiente capítulo de una novela, manteniendo coherencia narrativa, el tono literario y desarrollando más a fondo la historia:
 
             CONTENIDO ANTERIOR (muestra del final para contexto):
@@ -172,7 +209,7 @@ def generate_novel(title):
             - Mantener los personajes y la continuidad narrativa.
             
             ⚠️ No repitas texto anterior. Continúa la historia naturalmente.
-            """
+            \"\"\"
             part_response = model.generate_content(part_prompt)
             part_text = part_response.text.strip()
             parts.append(part_text)
@@ -238,7 +275,7 @@ def generate_novel(title):
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
-        print("Uso: python bb7.py \"Título de la novela\"")
+        print("Uso: python main.py \"Título de la novela\"")
         sys.exit(1)
 
     novel_title = sys.argv[1]

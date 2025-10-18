@@ -1,10 +1,3 @@
-```
-
-Claro, acá tenés un archivo **README.md** ideal para acompañar tu script **bb.py**:
-
----
-
-```
 # Generador de Novelas Ilustradas con Gemini 2
 
 Este proyecto permite generar una novela completa —incluyendo personajes, estructura narrativa, capítulos extensos, y storyboard visual— utilizando el modelo **Gemini 2** de Google. Ideal para escritores, creativos y desarrolladores que quieran experimentar con IA para la creación de historias visuales.
@@ -24,7 +17,7 @@ Este proyecto permite generar una novela completa —incluyendo personajes, estr
 ## **🚀 Uso**
 
 ```
-python bb7.py "Título de tu novela"
+python main.py "Título de tu novela"
 ```
 > Asegurate de incluir el título entre comillas si contiene espacios.
 
@@ -70,7 +63,7 @@ YYYY-MM-DD - titulo_slug/
 
 * El modelo puede generar texto repetitivo. Ajustá los *prompts* o el **slugify()** si querés mejorar estilo o longitud.
 * Asegurate de tener configurado correctamente el acceso a la API de Google.
-* Las imágenes se generan usando el método **model.generate\_image(prompt)**. Podés adaptar esto según tu implementación específica del modelo de imagen.
+* Las imágenes se generan usando el método **model.generate_image(prompt)**. Podés adaptar esto según tu implementación específica del modelo de imagen.
 
 ---
 
@@ -85,9 +78,3 @@ Este script fue diseñado para automatizar la creación de novelas y fomentar la
 Recordá **no exponer tu API Key** en repositorios públicos. Usá variables de entorno o archivos **.env** para mantener la seguridad en producción.
 
 ---
-
-```
----
-
-¿Querés que te lo guarde como archivo o que agregue algo más como instalación con `venv` o ejecución en entorno virtual?
-```
