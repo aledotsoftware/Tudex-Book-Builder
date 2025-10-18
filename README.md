@@ -74,6 +74,17 @@ python3 gui.py
 
 ---
 
+## **💾 Guardado y Carga de Proyectos**
+
+Novel Weaver Studio guarda tus proyectos en un formato de archivo personalizado, **`.tls`** (Tudex Litria Studio). Este archivo es una representación de tu novela en formato YAML, lo que lo hace legible y fácil de editar si es necesario.
+
+-   **Nuevo Proyecto**: Crea un nuevo proyecto desde el menú de la aplicación.
+-   **Guardar**: Guarda tu progreso actual en el archivo `.tls` asociado.
+-   **Guardar Como...**: Guarda tu trabajo en un nuevo archivo `.tls`.
+-   **Abrir**: Carga un proyecto de novela desde un archivo `.tls` existente.
+
+---
+
 ## **🖼️ Diseño de la Interfaz (Wireframe Conceptual)**
 
 ### **1. Columna Izquierda: Navegación y Estructura (El 'Esqueleto')**
