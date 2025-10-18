@@ -1,0 +1,32 @@
+{
+    "title": "La Isla de Brench: La Semilla de Orhalden. Historia de la Semilla de Orhalden: Hace siglos, antes de que la isla de Brenca tuviera nombre, solo existía el bosque. En su corazón crecía el Árbol Orhalden, un ser consciente, antiguo como el mundo, que comunicaba con los vivos a través de sueños y visiones. Era el protector del equilibrio natural, el que mantenía alejadas las sombras que querían corromper la isla. Pero cuando llegaron los hombres, el bosque se inquietó. No por temor, sino por lo que traían consigo: ambición, fuego y olvido. Para salvar su esencia, Orhalden desprendió su corazón y lo convirtió en una semilla. Fue su último acto antes de marchitarse. La Semilla de Orhalden quedó oculta en lo más profundo del bosque, protegida por espíritus vegetales, pruebas vivientes y un eco constante de la voz del Árbol. Se dice que quien la encuentre y sea digno, podrá despertar a los antiguos guardianes del bosque… o controlar las raíces mismas de la isla. Muchos la han buscado.",
+    "description": "En la mística Isla de Brench, un joven llamado Elara se embarca en una búsqueda para encontrar la Semilla de Orhalden, un antiguo artefacto que puede salvar el bosque de una misteriosa corrupción. Su viaje la lleva a través de paisajes peligrosos y la enfrenta a espíritus vegetales guardianes.",
+    "characters": [
+        {
+            "name": "Elara",
+            "description": "Una joven valiente y curiosa, con un profundo amor por la naturaleza. Inicialmente busca la Semilla para ganar reconocimiento, pero su motivación evoluciona a la de proteger el bosque."
+        },
+        {
+            "name": "Willow",
+            "description": "Un espíritu vegetal anciano y sabio, guardián de uno de los caminos hacia la Semilla. Evalúa a Elara con acertijos y pruebas de compasión."
+        },
+        {
+            "name": "Bram",
+            "description": "Un espíritu vegetal joven y juguetón, inicialmente desconfiado de Elara, pero que se convierte en su amigo y guía."
+        },
+        {
+            "name": "La Corrupción",
+            "description": "Una fuerza oscura que marchita el bosque, manifestándose como enredaderas negras y plantas enfermas. Se alimenta de la ambición y el descuido."
+        }
+    ],
+    "chapters": [
+        {
+            "title": "El Susurro del Bosque",
+            "summary": "Elara, una joven que vive al borde del Bosque Susurrante, nota que las plantas se están marchitando. Escucha un susurro del bosque que le habla de la Semilla de Orhalden, capaz de curar la tierra, y decide buscarla para ganarse el respeto de su aldea."
+        },
+        {
+            "title": "La Prueba de Willow",
+            "summary": "Elara se adentra en el bosque y se encuentra con Willow, un antiguo espíritu vegetal. Willow le dice que solo aquellos con un corazón puro pueden obtener la Semilla y la somete a una prueba de bondad y comprensión. Elara deberá demostrar su valía enfrentándose a sus propios prejuicios."
+        }
+    ]
+}

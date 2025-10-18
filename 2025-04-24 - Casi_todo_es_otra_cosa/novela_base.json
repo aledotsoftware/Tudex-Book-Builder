@@ -1,0 +1,36 @@
+{
+    "title": "Casi todo es otra cosa",
+    "description": "Un joven llamado Alex vive en un mundo donde sobrepiensa cada detalle, creyendo que todo tiene un significado oculto. Esta costumbre lo lleva a confusiones y tristezas, hasta que aprende a ver las cosas como son, encontrando así la paz y la felicidad.",
+    "characters": [
+        {
+            "name": "Alex",
+            "description": "Un joven inteligente y sensible que tiende a sobreanalizar las situaciones. Quiere ser feliz y amado, pero su mente a veces lo engaña."
+        },
+        {
+            "name": "Sofía",
+            "description": "La mejor amiga de Alex. Es una chica alegre y directa que ayuda a Alex a ver las cosas con más claridad."
+        },
+        {
+            "name": "El Abuelo Tomás",
+            "description": "Un anciano sabio y tranquilo, que le enseña a Alex a aceptar la realidad sin sobreinterpretarla."
+        }
+    ],
+    "chapters": [
+        {
+            "title": "El Cumpleaños Malinterpretado",
+            "summary": "Alex cree que su amiga Sofía está enojada con él porque no le felicitó de una manera especial en su cumpleaños. La sobreinterpretación de sus gestos lo lleva a sentirse triste y confundido."
+        },
+        {
+            "title": "El Consejo del Abuelo Tomás",
+            "summary": "Alex, triste por lo que cree que pasa con Sofía, visita a su abuelo Tomás en busca de consejo. El abuelo le explica que a veces las cosas son más sencillas de lo que parecen y que no siempre hay una intención oculta detrás de cada acción. Le sugiere hablar con Sofía directamente."
+        },
+        {
+            "title": "La Conversación con Sofía",
+            "summary": "Siguiendo el consejo de su abuelo, Alex se arma de valor y habla con Sofía. Ella le explica que simplemente había tenido un día ajetreado y que valoraba mucho su amistad. Alex se da cuenta de que había estado sobrepensando las cosas y que su amiga nunca tuvo ninguna mala intención."
+        },
+        {
+            "title": "Aprendiendo a Ver la Realidad",
+            "summary": "Después de la conversación con Sofía, Alex comienza a practicar el no sobrepensar las cosas. Aprende a confiar más en sus amigos y a aceptar la realidad tal como es, sin buscar significados ocultos en cada gesto o palabra. Poco a poco, Alex encuentra la paz y la felicidad que tanto anhelaba."
+        }
+    ]
+}
