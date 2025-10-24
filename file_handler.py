@@ -6,8 +6,11 @@ from ruamel.yaml import YAML
 from models import Novel, Chapter, Character
 
 def save_novel(novel_instance, filepath):
-    """
-    Saves a Novel object to a .tls file (YAML format).
+    """Saves a Novel object to a .tls file (YAML format).
+
+    Args:
+        novel_instance (Novel): The Novel object to save.
+        filepath (str): The path to the file where the novel will be saved.
     """
     yaml = YAML()
     yaml.register_class(Novel)
@@ -18,8 +21,13 @@ def save_novel(novel_instance, filepath):
         yaml.dump(novel_instance, f)
 
 def load_novel(filepath):
-    """
-    Loads a Novel object from a .tls file (YAML format).
+    """Loads a Novel object from a .tls file (YAML format).
+
+    Args:
+        filepath (str): The path to the .tls file to load.
+
+    Returns:
+        Novel: The loaded Novel object.
     """
     yaml = YAML()
     yaml.register_class(Novel)

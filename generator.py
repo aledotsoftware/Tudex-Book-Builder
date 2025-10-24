@@ -29,18 +29,22 @@ def slugify(text, max_length=50):
         max_length (int): The maximum length of the slug.
 
     Returns:
-        str: The slugified text.
+        str: The slugified text, or "untitled" if the result is empty.
     """
     text = re.sub(r"[^\w\s-]", "", text)
     text = re.sub(r"[-\s]+", "_", text.strip())
-    return text[:max_length]
+    text = text[:max_length]
+    if not text:
+        return "untitled"
+    return text
 
 def generate_storyboard_images(chapter_text, chapter_folder, model):
-    """
-    Divides the chapter content into paragraphs and generates images every 3 to 5 paragraphs.
-    The images are saved in the "imagenes" folder within the chapter directory.
-    A prompt is used to maintain a consistent visual style (watercolor, colored pencil,
-    pastel tones, and detailed textures).
+    """Generates and saves storyboard images for a chapter.
+
+    Divides the chapter content into paragraphs and generates images every 3 to 5
+    paragraphs. The images are saved in the "imagenes" folder within the chapter
+    directory. A prompt is used to maintain a consistent visual style (watercolor,
+    colored pencil, pastel tones, and detailed textures).
 
     Args:
         chapter_text (str): The text content of the chapter.
@@ -83,13 +87,21 @@ def generate_storyboard_images(chapter_text, chapter_folder, model):
             combined_prompt = ""
 
 def generate_novel(title):
-    """
-    Generates a complete novel with a title, description, characters, and chapters.
-    The novel is generated in JSON format and then expanded into a full text version
-    with storyboard images.
+    """Generates a complete novel from a title.
+
+    This function orchestrates the entire novel generation process. It uses a
+    generative AI model to create a description, a cast of characters, and a
+    series of chapters. The novel is initially generated as a JSON structure,
+    which is then expanded into a full-text version with storyboard images.
+
+    The generated files are saved in a directory named with the current date
+    and a slugified version of the novel's title.
 
     Args:
-        title (str): The title of the novel.
+        title (str): The title of the novel to be generated.
+
+    Raises:
+        ValueError: If the GOOGLE_API_KEY environment variable is not set.
     """
     # Configurar la API de Generative AI
     api_key = os.environ.get("GOOGLE_API_KEY")

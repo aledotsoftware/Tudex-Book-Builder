@@ -1,5 +1,10 @@
-"""
-This script is the command-line interface for the novel generator.
+"""Command-line interface for the novel generator.
+
+This script provides a way to generate a novel from the command line. It takes
+a single argument: the title of the novel to be generated.
+
+Usage:
+    python main.py "The Title of the Novel"
 """
 
 import sys

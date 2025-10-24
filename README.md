@@ -78,9 +78,18 @@ Esto soluciona errores como `ModuleNotFoundError: No module named 'toga'`.
 
 ### **4. Ejecuta la Aplicación**
 
+#### **Interfaz Gráfica (GUI)**
+
 Con el entorno virtual activado, lanza Novel Weaver Studio:
 ```bash
 python3 gui.py
+```
+
+#### **Interfaz de Línea de Comandos (CLI)**
+
+Para generar una novela desde la línea de comandos, usa el siguiente comando:
+```bash
+python3 main.py "El Título de tu Novela"
 ```
 
 ---
