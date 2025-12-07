@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Dodgeball Arena</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <div id="ui-layer">
+            <span id="score">0</span>
+        </div>
+        <div id="start-screen">
+            <h1>DODGEBALL</h1>
+            <p>Drag to Move. Avoid Balls.</p>
+            <button id="start-btn">ENTER ARENA</button>
+        </div>
+        <div id="game-over-screen" class="hidden">
+            <h1>KNOCKOUT</h1>
+            <p>Time: <span id="final-score">0</span>s</p>
+            <button id="restart-btn">REMATCH</button>
+        </div>
+    </div>
+    <script src="audio.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>

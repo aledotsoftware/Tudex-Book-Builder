@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Pixel Jump</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <div id="ui-layer">
+            H: <span id="score">0</span>
+        </div>
+        <div id="start-screen">
+            <h1>PIXEL JUMP</h1>
+            <p>Tilt / Tap Left-Right to Move.</p>
+            <p>Jump on Platforms.</p>
+            <button id="start-btn">START</button>
+        </div>
+        <div id="game-over-screen" class="hidden">
+            <h1>FALLEN</h1>
+            <p>Height: <span id="final-score">0</span></p>
+            <button id="restart-btn">RETRY</button>
+        </div>
+    </div>
+    <script src="audio.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>

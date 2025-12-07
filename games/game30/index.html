@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Laser Maze</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <div id="ui-layer">
+            Level: <span id="level">1</span>
+        </div>
+        <div id="start-screen">
+            <h1>LASER MAZE</h1>
+            <p>Drag to guide the spark.</p>
+            <p>Avoid walls.</p>
+            <button id="start-btn">INITIALIZE</button>
+        </div>
+        <div id="game-over-screen" class="hidden">
+            <h1>TERMINATED</h1>
+            <p>Reached Level: <span id="final-level">1</span></p>
+            <button id="restart-btn">REBOOT</button>
+        </div>
+    </div>
+    <script src="audio.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
