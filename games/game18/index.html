@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Neon Breaker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <div id="ui-layer">
+            <div class="score-board">Score: <span id="score">0</span></div>
+        </div>
+        <div id="start-screen">
+            <h1>NEON BREAKER</h1>
+            <p>Drag to move paddle. Destroy all bricks.</p>
+            <button id="start-btn">PLAY</button>
+        </div>
+        <div id="game-over-screen" class="hidden">
+            <h1 id="game-over-title">GAME OVER</h1>
+            <p>Score: <span id="final-score">0</span></p>
+            <button id="restart-btn">TRY AGAIN</button>
+        </div>
+    </div>
+    <script src="audio.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
