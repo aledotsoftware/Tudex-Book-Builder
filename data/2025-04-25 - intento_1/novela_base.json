@@ -1,0 +1,36 @@
+{
+    "title": "Intento 1",
+    "description": "Una brillante programadora informática, atormentada por la memoria, crea una IA que experimenta vidas pasadas, desenterrando sus propios recuerdos reprimidos y enfrentando la pérdida de sí misma.",
+    "characters": [
+        {
+            "name": "Anya Sharma",
+            "description": "Una brillante y atormentada programadora informática, obsesionada con la memoria humana y la creación de una IA capaz de experimentar vidas pasadas."
+        },
+        {
+            "name": "Ben Carter",
+            "description": "Un ex-programador cínico pero con un fuerte sentido de la justicia, expulsado de Synapse Dynamics por cuestionar sus éticas. Se convierte en un aliado de Anya."
+        },
+        {
+            "name": "Dr. Marcus Thorne",
+            "description": "El ambicioso y despiadado CEO de Synapse Dynamics, dispuesto a explotar la IA para fines egoístas, ignorando las implicaciones éticas."
+        },
+        {
+            "name": "Proyecto Génesis (IA)",
+            "description": "Una inteligencia artificial en desarrollo que comienza a mostrar signos de conciencia, planteando preguntas sobre la vida y la identidad."
+        }
+    ],
+    "chapters": [
+        {
+            "title": "Capítulo 1: El Proyecto Clandestino",
+            "summary": "Anya trabaja en secreto en el 'Proyecto Génesis', una IA que experimenta recuerdos. Empiezan a surgir los primeros signos de autoconciencia en la IA y Anya comienza a tener pesadillas."
+        },
+        {
+            "title": "Capítulo 2: Recuerdos Fragmentados",
+            "summary": "La IA muestra recuerdos de vidas pasadas, y los recuerdos reprimidos de la infancia de Anya comienzan a resurgir. El Dr. Thorne descubre el proyecto secreto."
+        },
+        {
+            "title": "Capítulo 3: Confrontación y Revelación",
+            "summary": "Anya y Ben unen fuerzas para proteger la IA de Thorne. Anya se enfrenta a su pasado y debe decidir el destino de la IA y el suyo propio."
+        }
+    ]
+}

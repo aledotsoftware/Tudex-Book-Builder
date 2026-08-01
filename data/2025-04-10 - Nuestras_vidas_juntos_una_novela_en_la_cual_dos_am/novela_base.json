@@ -1,0 +1,216 @@
+{
+    "title": "Nuestras Vidas Juntos: Una Novela de Amistad, Amor y Humor en Ushuaia",
+    "description": "Diego y Martín, amigos inseparables y compañeros de trabajo, escapan de la rutina porteña en un viaje a Ushuaia. Una noche de alcohol y juegos online desata una conversación inesperada sobre la posibilidad de ser pareja, sembrando la duda sobre el futuro de su relación.",
+    "characters": [
+        {
+            "name": "Diego",
+            "description": "Impulsivo, aventurero y con un sentido del humor afilado. Busca una chispa en su vida y una forma de superar sus fracasos amorosos. Trabaja como desarrollador senior en la empresa de software."
+        },
+        {
+            "name": "Martín",
+            "description": "Reservado, melancólico y reflexivo. Disfruta de la estabilidad y la rutina, pero anhela algo más en su vida.  Es el mejor amigo de Diego y también trabaja como desarrollador senior."
+        }
+    ],
+    "chapters": [
+        {
+            "title": "Capítulo 1: El Tedio de la Oficina",
+            "summary": "Se presenta a Diego y Martín en su rutina laboral en Buenos Aires, compartiendo frustraciones y comentando sus vidas amorosas fallidas."
+        },
+        {
+            "title": "Capítulo 2: La Propuesta de Ushuaia",
+            "summary": "Diego, impulsado por la necesidad de un cambio, convence a Martín de viajar a Ushuaia."
+        },
+        {
+            "title": "Capítulo 3: Preparativos y Dudas",
+            "summary": "Diego organiza el viaje con entusiasmo, mientras Martín lidia con sus propias dudas y temores."
+        },
+        {
+            "title": "Capítulo 4: Rumbo al Sur",
+            "summary": "Diego y Martín emprenden el viaje a Ushuaia, con una mezcla de emoción y nerviosismo."
+        },
+        {
+            "title": "Capítulo 5: El Fin del Mundo",
+            "summary": "Llegan a Ushuaia y se maravillan con la belleza del paisaje patagónico."
+        },
+        {
+            "title": "Capítulo 6: Explorando la Ciudad",
+            "summary": "Recorren Ushuaia, visitando lugares emblemáticos y sintiendo la magia del lugar."
+        },
+        {
+            "title": "Capítulo 7: La Cabaña Acogedora",
+            "summary": "Se instalan en una cabaña rústica, que se convierte en su refugio durante el viaje."
+        },
+        {
+            "title": "Capítulo 8: Navegando por el Beagle",
+            "summary": "Realizan una excursión en barco por el Canal Beagle, disfrutando del paisaje y la fauna marina."
+        },
+        {
+            "title": "Capítulo 9: Conversaciones al Atardecer",
+            "summary": "Comparten reflexiones sobre la vida y el amor mientras contemplan la puesta de sol."
+        },
+        {
+            "title": "Capítulo 10: La Noche del Juego",
+            "summary": "Después de una caminata, regresan a la cabaña y deciden jugar un juego online mientras beben vino."
+        },
+        {
+            "title": "Capítulo 11: Sátira Amorosa",
+            "summary": "Comienzan a burlarse de sus relaciones pasadas, creando personajes y situaciones exageradas en el juego."
+        },
+        {
+            "title": "Capítulo 12: La Propuesta Inesperada",
+            "summary": "En medio del alcohol y la euforia, surge la idea de que ellos mismos sean pareja."
+        },
+        {
+            "title": "Capítulo 13: Escenarios Cómicos",
+            "summary": "Imaginan una vida juntos, creando escenarios cómicos sobre las desventuras de su improbable unión."
+        },
+        {
+            "title": "Capítulo 14: La Semilla de la Duda",
+            "summary": "Debajo del humor, se siembra la duda sobre si su amistad podría ser algo más."
+        },
+        {
+            "title": "Capítulo 15: Resaca y Vergüenza",
+            "summary": "Al amanecer, la resaca y la vergüenza los invaden. Intentan olvidar la charla de la noche anterior."
+        },
+        {
+            "title": "Capítulo 16: Regreso a la Normalidad",
+            "summary": "Tratan de retomar sus roles de amigos y compañeros de trabajo, pero algo ha cambiado."
+        },
+        {
+            "title": "Capítulo 17: La Idea Persistente",
+            "summary": "La idea de 'Nuestras vidas juntos' persiste en sus mentes, desafiando sus certezas."
+        },
+        {
+            "title": "Capítulo 18: Dudas y Reflexiones",
+            "summary": "Se cuestionan si lo que creían conocer el uno del otro es suficiente para construir un futuro juntos."
+        },
+        {
+            "title": "Capítulo 19: Un Paseo por la Playa",
+            "summary": "Caminan por la playa, intentando procesar sus sentimientos y emociones."
+        },
+        {
+            "title": "Capítulo 20: La Mirada de Martín",
+            "summary": "Diego nota una mirada diferente en los ojos de Martín, llena de incertidumbre y esperanza."
+        },
+        {
+            "title": "Capítulo 21: Un Recuerdo del Pasado",
+            "summary": "Recuerdan un momento significativo de su amistad que podría haber sido algo más."
+        },
+        {
+            "title": "Capítulo 22: Confesiones Inesperadas",
+            "summary": "Martín revela un sentimiento oculto que ha guardado durante años."
+        },
+        {
+            "title": "Capítulo 23: La Reacción de Diego",
+            "summary": "Diego se sorprende y se siente confundido por la confesión de Martín."
+        },
+        {
+            "title": "Capítulo 24: Un Silencio Incómodo",
+            "summary": "Un silencio incómodo se instala entre ellos, lleno de tensión y expectativa."
+        },
+        {
+            "title": "Capítulo 25: La Decisión de Diego",
+            "summary": "Diego se enfrenta a la difícil decisión de qué hacer con los sentimientos de Martín."
+        },
+        {
+            "title": "Capítulo 26: Un Nuevo Día en Ushuaia",
+            "summary": "Intentan pasar un día normal en Ushuaia, pero la tensión entre ellos es palpable."
+        },
+        {
+            "title": "Capítulo 27: La Visita al Glaciar Martial",
+            "summary": "Visitan el Glaciar Martial, admirando la imponente belleza del hielo."
+        },
+        {
+            "title": "Capítulo 28: Reflexiones en la Montaña",
+            "summary": "Durante la caminata, reflexionan sobre sus vidas y sus sentimientos."
+        },
+        {
+            "title": "Capítulo 29: El Desafío de la Vulnerabilidad",
+            "summary": "Diego se da cuenta de que debe ser vulnerable y honesto con Martín."
+        },
+        {
+            "title": "Capítulo 30: Una Conversación Pendiente",
+            "summary": "Deciden tener una conversación honesta y abierta sobre su relación."
+        },
+        {
+            "title": "Capítulo 31: Regreso a Buenos Aires",
+            "summary": "El viaje a Ushuaia llega a su fin y regresan a Buenos Aires."
+        },
+        {
+            "title": "Capítulo 32: El Reencuentro en la Oficina",
+            "summary": "Se reencuentran en la oficina, sintiendo la tensión y la expectativa."
+        },
+        {
+            "title": "Capítulo 33: Evitando el Tema",
+            "summary": "Intentan evitar el tema de Ushuaia, pero es imposible ignorarlo."
+        },
+        {
+            "title": "Capítulo 34: Una Invitación a Cenar",
+            "summary": "Diego invita a Martín a cenar para hablar sobre lo sucedido."
+        },
+        {
+            "title": "Capítulo 35: La Cena Incómoda",
+            "summary": "La cena es incómoda y llena de silencios, pero también de miradas significativas."
+        },
+        {
+            "title": "Capítulo 36: La Honestidad de Diego",
+            "summary": "Diego finalmente se abre y le confiesa a Martín sus propios sentimientos."
+        },
+        {
+            "title": "Capítulo 37: Una Nueva Perspectiva",
+            "summary": "Martín se siente aliviado y sorprendido por la honestidad de Diego."
+        },
+        {
+            "title": "Capítulo 38: El Miedo al Compromiso",
+            "summary": "Ambos expresan su miedo al compromiso y a la incertidumbre del futuro."
+        },
+        {
+            "title": "Capítulo 39: Un Paso Adelante",
+            "summary": "Deciden dar un paso adelante y explorar la posibilidad de una relación."
+        },
+        {
+            "title": "Capítulo 40: Citas y Descubrimientos",
+            "summary": "Comienzan a tener citas, descubriendo nuevas facetas el uno del otro."
+        },
+        {
+            "title": "Capítulo 41: La Opinión de los Amigos",
+            "summary": "Comparten la noticia con sus amigos, enfrentando diversas reacciones."
+        },
+        {
+            "title": "Capítulo 42: Desafíos y Obstáculos",
+            "summary": "Enfrentan desafíos y obstáculos en su relación, como la opinión de sus familias y el miedo al juicio social."
+        },
+        {
+            "title": "Capítulo 43: La Fuerza del Amor",
+            "summary": "Se dan cuenta de que el amor que sienten el uno por el otro es más fuerte que cualquier obstáculo."
+        },
+        {
+            "title": "Capítulo 44: Una Decisión Importante",
+            "summary": "Deben tomar una decisión importante sobre el futuro de su relación."
+        },
+        {
+            "title": "Capítulo 45: Un Viaje a Mar del Plata",
+            "summary": "Escapan de Buenos Aires en un viaje a Mar del Plata."
+        },
+        {
+            "title": "Capítulo 46: El Mar como Testigo",
+            "summary": "El mar es testigo de su amor y su compromiso."
+        },
+        {
+            "title": "Capítulo 47: Un Futuro Juntos",
+            "summary": "Imaginan un futuro juntos, lleno de amor, felicidad y desafíos."
+        },
+        {
+            "title": "Capítulo 48: El Anillo de Compromiso",
+            "summary": "Diego le propone matrimonio a Martín."
+        },
+        {
+            "title": "Capítulo 49: Celebración y Alegría",
+            "summary": "Celebran su compromiso con amigos y familiares."
+        },
+        {
+            "title": "Capítulo 50: Nuestras Vidas Juntos",
+            "summary": "Comienzan a construir sus vidas juntos, aceptando sus imperfecciones y amándose incondicionalmente."
+        }
+    ]
+}
