@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Orbit Shield</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <div id="ui-layer">
+            <div>SCORE: <span id="score">0</span></div>
+            <div>SHIELD: <span id="shield-integrity">100%</span></div>
+        </div>
+        <div id="start-screen">
+            <h1>Orbit Shield</h1>
+            <p>Tap Left/Right to Rotate. Protect the Core.</p>
+            <button id="start-btn">INITIATE</button>
+        </div>
+        <div id="game-over-screen" class="hidden">
+            <h1>CORE DESTROYED</h1>
+            <p>Score: <span id="final-score">0</span></p>
+            <button id="restart-btn">REBOOT</button>
+        </div>
+    </div>
+    <script src="audio.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>

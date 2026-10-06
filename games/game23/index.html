@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Gravity Runner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <div id="ui-layer">
+            <span id="score">0m</span>
+        </div>
+        <div id="start-screen">
+            <h1>GRAVITY RUNNER</h1>
+            <p>Tap to Flip Gravity.</p>
+            <button id="start-btn">RUN</button>
+        </div>
+        <div id="game-over-screen" class="hidden">
+            <h1>CRASHED</h1>
+            <p>Distance: <span id="final-score">0</span>m</p>
+            <button id="restart-btn">RETRY</button>
+        </div>
+    </div>
+    <script src="audio.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>

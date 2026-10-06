@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Quick Math</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="header">
+            <span>Score: <span id="score">0</span></span>
+        </div>
+        <div id="timer-bar"><div id="timer-fill"></div></div>
+        <div id="question-area">
+            <span id="question">2 + 2 = ?</span>
+        </div>
+        <div id="answers-area">
+            <div class="answer-btn" id="btn0"></div>
+            <div class="answer-btn" id="btn1"></div>
+            <div class="answer-btn" id="btn2"></div>
+            <div class="answer-btn" id="btn3"></div>
+        </div>
+
+        <div id="start-screen">
+            <h1>QUICK MATH</h1>
+            <p>Solve as many as you can!</p>
+            <button id="start-btn">START</button>
+        </div>
+        <div id="game-over-screen" class="hidden">
+            <h1>TIME'S UP</h1>
+            <p>Final Score: <span id="final-score">0</span></p>
+            <button id="restart-btn">AGAIN</button>
+        </div>
+    </div>
+    <script src="audio.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
